@@ -14,7 +14,12 @@ def run(args):
 			2: 'https://github.com/cakephp/cakephp/archive/2.5.6.zip',
 			3: 'https://github.com/cakephp/app/archive/3.0.0-beta3.zip'}
 
-	try:	
+	try:
+		# check that --dir exists, if not create it
+		if not os.path.exists(args.dir):
+			os.makedirs(args.dir)
+			sys.stdout.write('Created directory: ' + args.dir + '\n')
+
 		sys.stdout.write('Downloading CakePHP...\t\t\t')
 		sys.stdout.flush()
 		
