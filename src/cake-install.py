@@ -11,7 +11,7 @@ from requests.exceptions import ConnectionError, HTTPError, Timeout, TooManyRedi
 
 def run(args):
 	zipurls = {1: 'https://github.com/cakephp/cakephp/archive/1.3.20.zip',
-			2: 'https://github.com/cakephp/cakephp/archive/2.5.6.zip',
+			2: 'https://github.com/cakephp/cakephp/archive/2.6.2.zip',
 			3: 'https://github.com/cakephp/app/archive/3.0.0-beta3.zip'}
 
 	try:
